@@ -43,4 +43,9 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+  sites: PropTypes.array,
+  clickHandler: PropTypes.func,
+}
+
 export default App;
