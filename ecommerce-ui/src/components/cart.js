@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 
 export default class Cart extends Component {
-    constructor(state) {
-        super();
-        this.resCount = 0;
-    }
-
     render() {
+        const siteList = this.props.sites
+            .map( (site, idx) => {
+                return (
+                    <li key={idx}>
+                        {site}
+                        <button onClick={this.props.clickHandler}>Delete</button>
+                    </li>
+                )
+            })
+
         return (
             <div id="cart">
-                <span>Hello.</span>
-                <span className="reservation">{this.props.resCount}</span>
+                <div id="cartTop">
+                    <span>Hello.</span>
+                    <span className="reservation">{this.props.resCount}</span>
+                </div>
+                <ul>
+                    {siteList}
+                </ul>
             </div>
         );
     }

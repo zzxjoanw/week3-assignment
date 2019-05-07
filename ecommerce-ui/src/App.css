@@ -1,6 +1,8 @@
-#cart {
+* { margin:0; }
+
+#cartTop {
+  padding:5px; 
   height:50px;
-  padding: 5px;
   line-height: 50px;
   color:white;
   font-weight: bold;
