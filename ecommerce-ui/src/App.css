@@ -54,4 +54,4 @@ button {
 }
 
 .card .feedback { font-size: 2em; }
-.card button { float:right; }
+.card button { float:right; position:relative; top:9px; }
