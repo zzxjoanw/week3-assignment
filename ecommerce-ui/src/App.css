@@ -47,13 +47,10 @@ button {
 
 .card img { width:280px; }
 
-.card .feedback {
+.card .star {
   font-size:2em;
   width:140px;
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*background-image: linear-gradient(to right, #ffdd33 0%,yellow 50%,white 50%,white 100%);*/
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: darkgoldenrod;
+  color:darkgoldenrod;
 }
+
+.card .feedback { font-size: 2em; }

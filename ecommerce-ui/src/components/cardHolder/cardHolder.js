@@ -8,8 +8,8 @@ export default class CardHolder extends Component {
                 <div>{airbnbs[idx].title}</div>
                 <span>{airbnbs[idx].houseType}</span>
                 <img src={airbnbs[idx].image} />
-                <span className="feedback" style={{ background:'linear-gradient(to right, #ffdd33 0%, yellow '+airbnbs[idx].rating.stars*20+'%,white'+airbnbs[idx].rating.stars*20+'%, white 100%)'}}>★★★★★</span>
-                <button onClick={this.props.clickHandler(idx, airbnbs[idx].title)}>Book</button>
+                <span className="feedback">{airbnbs[idx].rating.stars}</span><span className="star">★</span>
+                <button onClick={this.props.clickHandler(idx, airbnbs[idx].title)}>Book (${airbnbs[idx].payment.cost})</button>
             </li>
         ))
         return (
