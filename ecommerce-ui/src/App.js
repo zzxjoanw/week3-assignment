@@ -1,17 +1,19 @@
 import React, {Component } from 'react';
-import CardHolder from './components/cardHolder';
-import Cart from './components/cart';
+import CardHolder from './components/cardHolder/cardHolder';
+import Cart from './components/cart/cart';
+import PropTypes from 'prop-types';
 import './App.css';
 
 class App extends Component {
   state = {
-    sites: ['Denver','Budapest','Tokyo'],
+    sites: [],
     reservedSites: [],
   }
 
-  toggleReserve = (idx) => {
+  toggleReserve = (idx, title) => {
     return () => {
-      const reservation = this.state.sites[idx];
+      const reservation = title;
+//      const reservation = this.state.sites[idx];
 
       if(this.state.reservedSites.includes(reservation)) {
         alert("You already booked that one.");

@@ -1,4 +1,14 @@
 * { margin:0; }
+ul { list-style-type: none; }
+button {
+  height:30px;
+  line-height:30px;
+  background:linear-gradient(to right, blueviolet 0%, blue 100%);
+  color:white;
+  font-weight: bold;
+  border:none;
+  margin-right:10px; 
+}
 
 #cartTop {
   padding:5px; 
@@ -46,13 +56,4 @@
   /*background-image: linear-gradient(to right, #ffdd33 0%,yellow 50%,white 50%,white 100%);*/
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: darkgoldenrod;
-}
-
-.card button {
-  height:30px;
-  line-height:30px;
-  background:linear-gradient(to right, blueviolet 0%, blue 100%);
-  color:white;
-  font-weight: bold;
-  border:none;
 }

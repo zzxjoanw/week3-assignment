@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a cart with items in it 1`] = `
+<div
+  id="cart"
+>
+  <div
+    id="cartTop"
+  >
+    <span>
+      Hello.
+    </span>
+    <span
+      className="reservation"
+    />
+  </div>
+  <ul>
+    <li>
+      Denver
+      <button>
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders an empty cart 1`] = `
+<div
+  id="cart"
+>
+  <div
+    id="cartTop"
+  >
+    <span>
+      Hello.
+    </span>
+    <span
+      className="reservation"
+    />
+  </div>
+  <ul />
+</div>
+`;

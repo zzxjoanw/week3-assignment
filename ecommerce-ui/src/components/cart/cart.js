@@ -6,8 +6,8 @@ export default class Cart extends Component {
             .map( (site, idx) => {
                 return (
                     <li key={idx}>
-                        {site}
                         <button onClick={this.props.clickHandler}>Delete</button>
+                        {site}
                     </li>
                 )
             })
@@ -24,4 +24,4 @@ export default class Cart extends Component {
             </div>
         );
     }
-}
+}  
