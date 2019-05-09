@@ -16,7 +16,7 @@ export default class Cart extends Component {
             <div id="cart">
                 <div id="cartTop">
                     <span>Hello.</span>
-                    <span className="reservation">{this.props.resCount}</span>
+                    <span className="reservation">{this.props.count}</span>
                 </div>
                 <ul>
                     {siteList}
